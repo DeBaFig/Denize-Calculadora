@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="container w-100">
+    <div class="text-center p-4 ">
+        <h1 style="text-transform:uppercase">Calculadora</h1>
+    </div>
+    <form  class="row d-flex align-items-center mx-auto w-50">
+        <div class="form-group col mb-3">
+            <span class="input-group-text ">Número 1</span>
+            <input type="number" name="a" class="form-control" required>
+        </div>
+        <div class="form-group col mb-3">
+            <span class="input-group-text">Número 2</span> 
+            <input type="number" name="b" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <input asp-action="Somar"  type="submit" value="Somar" class="btn btn-primary" />
+            <input asp-action="Subtrair" type="submit" value="Subtrair" class="btn btn-primary" />
+            <input asp-action="Dividir" type="submit" value="Dividir" class="btn btn-primary" />
+            <input asp-action="Multiplicar" type="submit" value="Multiplicar" class="btn btn-primary" />
+        </div>
+    </form>
+    
+</div>
